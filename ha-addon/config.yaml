@@ -2,7 +2,8 @@ name: "Garden Planner"
 version: "0.1.0"
 slug: "garden_planner"
 description: "A local-first, AI-native garden journal. Track every plant from seed to harvest via MCP."
-url: "https://github.com/julien.machon/garden-planner"
+url: "https://github.com/julienmachon/garden-planner"
+image: "ghcr.io/julienmachon/garden-planner:{version}"
 arch:
   - aarch64
   - amd64
