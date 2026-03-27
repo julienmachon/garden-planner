@@ -1,7 +1,0 @@
-#!/usr/bin/with-contenv bashio
-
-export DATA_DIR="/data"
-export PORT="$(bashio::config 'port')"
-
-bashio::log.info "Starting Garden Planner MCP server on port ${PORT}..."
-exec garden-planner
