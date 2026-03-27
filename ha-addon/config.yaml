@@ -1,5 +1,5 @@
 name: "Garden Planner"
-version: "0.1.0"
+version: "0.1.1"
 slug: "garden_planner"
 description: "A local-first, AI-native garden journal. Track every plant from seed to harvest via MCP."
 url: "https://github.com/julienmachon/garden-planner"
