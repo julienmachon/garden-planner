@@ -9,7 +9,7 @@ Built as a [Home Assistant](https://www.home-assistant.io/) add-on so your data 
 The app exposes an [MCP](https://modelcontextprotocol.io/) (Model Context Protocol) API. You connect your AI assistant (e.g. Claude) to it and interact conversationally:
 
 > *"I just planted cherry tomato seeds in bed 3"*
-> *"My zucchini got its first flower today"*
+> *"My courgette got its first flower today"*
 > *"How much did I harvest last season?"*
 
 The assistant calls the right MCP tools behind the scenes — no forms, no UI.
