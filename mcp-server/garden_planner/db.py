@@ -19,6 +19,7 @@ def init_db() -> None:
 
     alembic_ini = os.path.join(os.path.dirname(__file__), "..", "alembic.ini")
     cfg = Config(os.path.normpath(alembic_ini))
+    cfg.set_main_option("sqlalchemy.url", f"sqlite:///{DB_PATH}")
     command.upgrade(cfg, "head")
 
 
