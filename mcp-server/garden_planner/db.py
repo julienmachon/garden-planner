@@ -1,6 +1,6 @@
 import os
 
-from sqlmodel import Session, SQLModel, create_engine
+from sqlmodel import Session, create_engine
 
 DATA_DIR = os.getenv("DATA_DIR", "./data")
 DB_PATH = os.path.join(DATA_DIR, "garden.db")
@@ -13,7 +13,13 @@ engine = create_engine(
 
 def init_db() -> None:
     os.makedirs(DATA_DIR, exist_ok=True)
-    SQLModel.metadata.create_all(engine)
+
+    from alembic.config import Config
+    from alembic import command
+
+    alembic_ini = os.path.join(os.path.dirname(__file__), "..", "alembic.ini")
+    cfg = Config(os.path.normpath(alembic_ini))
+    command.upgrade(cfg, "head")
 
 
 def get_session() -> Session:
