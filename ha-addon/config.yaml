@@ -15,4 +15,5 @@ options:
   port: 8765
 schema:
   port: int
+host_network: true
 init: false
