@@ -11,8 +11,6 @@ ports:
   8765/tcp: 8765
 ports_description:
   8765/tcp: "MCP API (SSE)"
-map:
-  - data:rw
 options:
   port: 8765
 schema:
