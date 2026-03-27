@@ -1,0 +1,4 @@
+configuration:
+  port:
+    name: Port
+    description: The port the MCP API server listens on.

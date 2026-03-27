@@ -1,0 +1,19 @@
+name: "Garden Planner"
+version: "0.1.0"
+slug: "garden_planner"
+description: "A local-first, AI-native garden journal. Track every plant from seed to harvest via MCP."
+url: "https://github.com/julien.machon/garden-planner"
+arch:
+  - aarch64
+  - amd64
+ports:
+  8765/tcp: 8765
+ports_description:
+  8765/tcp: "MCP API (SSE)"
+map:
+  - data:rw
+options:
+  port: 8765
+schema:
+  port: int
+init: false

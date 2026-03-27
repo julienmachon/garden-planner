@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bashio
+
+exit_code="${1}"
+
+if [ "${exit_code}" -ne 0 ] && [ "${exit_code}" -ne 256 ]; then
+    bashio::log.error "Garden Planner exited with code ${exit_code}"
+    bashio::exit.nok
+fi
